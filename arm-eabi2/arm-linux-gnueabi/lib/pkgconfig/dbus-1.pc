@@ -1,0 +1,15 @@
+prefix=/arm-eabi
+exec_prefix=/arm-eabi/arm-linux-gnueabi/
+libdir=${exec_prefix}/lib
+includedir=/arm-eabi/arm-linux-gnueabi/include
+system_bus_default_address=unix:path=/arm-eabi/var/run/dbus/system_bus_socket
+sysconfdir=/arm-eabi/etc
+session_bus_services_dir=/arm-eabi/share/dbus-1/services
+daemondir=/arm-eabi/arm-linux-gnueabi//bin
+
+Name: dbus
+Description: Free desktop message bus
+Version: 1.2.1
+Libs: -L${libdir} -ldbus-1  
+Cflags: -I${includedir}/dbus-1.0 -I${libdir}/dbus-1.0/include
+

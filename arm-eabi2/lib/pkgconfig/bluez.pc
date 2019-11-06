@@ -1,0 +1,11 @@
+prefix=/arm-eabi
+exec_prefix=/arm-eabi
+libdir=/arm-eabi/lib
+includedir=/arm-eabi/arm-linux-gnueabi/include
+ 
+Name: BlueZ
+Description: Bluetooth protocol stack for Linux
+Version: 2.17
+Requires: 
+Libs: -L${libdir} -lbluetooth
+Cflags: -I${includedir}

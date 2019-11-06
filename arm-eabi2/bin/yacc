@@ -1,0 +1,2 @@
+#! /bin/sh
+exec '/opt/toolchains/motomagx/arm-eabi2/lib/bin/bison' -y "$@"
